@@ -67,7 +67,8 @@ void Widget::on_captureButton__clicked()
 
 void Widget::detectionpi(Mat img1){
 
-    Mat img2 = imread("../quadrimon-project/carteE.jpg");
+    //Mat img2 = imread("../quadrimon-project/carteE.jpg");
+    Mat img2 = imread("/Users/alhozsofiane/quadrimon-project/carteE.jpg");
     // img2 = resize(img2, img1.size());
     //-- Step 1: Detect the keypoints using SIFT Detector, compute the descriptors
     Ptr<SIFT> detector = SIFT::create( );
